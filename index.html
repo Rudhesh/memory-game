@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Memory Game!</title>
+  </head>
+
+
+    
+    <body>
+      <section class="memory-game">
+        <div class="memoryCard" data-vehicles="aurelia">
+          <img class="front-face" src="./src/img/33-330411_cars-car-clipart-free-clipart-images-transparent-background.png" alt="Aurelia" />
+          <img class="back-face" src="./src/img/23978.jpg" alt="JS Badge" />
+        </div>
+        <div class="memoryCard" data-vehicles="aurelia">
+          <img class="front-face" src="./src/img/33-330411_cars-car-clipart-free-clipart-images-transparent-background.png" alt="Aurelia" />
+          <img class="back-face" src="./src/img/23978.jpg" alt="JS Badge" />
+        </div>
+    
+        <div class="memoryCard" data-vehicles="vue">
+          <img class="front-face" src="./src/img/69-698294_jeep-wrangler-car-force-clip-art-jeep-clipart.png" alt="Vue" />
+          <img class="back-face" src="./src/img/23978.jpg" alt="JS Badge" />
+        </div>
+        <div class="memoryCard" data-vehicles="vue">
+          <img class="front-face" src="./src/img/69-698294_jeep-wrangler-car-force-clip-art-jeep-clipart.png" alt="Vue" />
+          <img class="back-face" src="./src/img/23978.jpg" alt="JS Badge" />
+        </div>
+    
+        <div class="memoryCard" data-vehicles="angular">
+          <img class="front-face" src="./src/img/1764.png" alt="Angular" />
+          <img class="back-face" src="./src/img/23978.jpg" alt="JS Badge" />
+        </div>
+        <div class="memoryCard" data-vehicles="angular">
+          <img class="front-face" src="./src/img/1764.png" alt="Angular" />
+          <img class="back-face" src="./src/img/23978.jpg" alt="JS Badge" />
+        </div>
+    
+        <div class="memoryCard" data-vehicles="ember">
+          <img class="front-face" src="./src/img/download.png" alt="Ember" />
+          <img class="back-face" src="./src/img/23978.jpg" alt="JS Badge" />
+        </div>
+        <div class="memoryCard" data-vehicles="ember">
+          <img class="front-face" src="./src/img/download.png" alt="Ember" />
+          <img class="back-face" src="./src/img/23978.jpg" alt="JS Badge" />
+        </div>
+    
+        <div class="memoryCard" data-vehicles="backbone">
+          <img class="front-face" src="./src/img/e7aa4203411d507405efee929c396716.jpg" alt="Backbone" />
+          <img class="back-face" src="./src/img/23978.jpg" alt="JS Badge" />
+        </div>
+        <div class="memoryCard" data-vehicles="backbone">
+          <img class="front-face" src="./src/img/e7aa4203411d507405efee929c396716.jpg" alt="Backbone" />
+          <img class="back-face" src="./src/img/23978.jpg" alt="JS Badge" />
+        </div>
+    
+        <div class="memoryCard" data-vehicles="react">
+          <img class="front-face" src="./src/img/images.png" alt="React" />
+          <img class="back-face" src="./src/img/23978.jpg" alt="JS Badge" />
+        </div>
+        <div class="memoryCard" data-vehicles="react">
+          <img class="front-face" src="./src/img/images.png" alt="React" />
+          <img class="back-face" src="./src/img/23978.jpg" alt="JS Badge" />
+        </div>
+        <div class="memoryCard" data-vehicles="java">
+          <img class="front-face" src="./src/img/vektor-illustrations-schulbus-clipart-120699732.jpg" alt="React" />
+          <img class="back-face" src="./src/img/23978.jpg" alt="JS Badge" />
+        </div>
+        <div class="memoryCard" data-vehicles="java">
+          <img class="front-face" src="./src/img/vektor-illustrations-schulbus-clipart-120699732.jpg" alt="React" />
+          <img class="back-face" src="./src/img/23978.jpg" alt="JS Badge" />
+        </div>
+        <div class="memoryCard" data-vehicles="php">
+          <img class="front-face" src="./src/img/orange-road-roller-vector-19619248.jpg" alt="React" />
+          <img class="back-face" src="./src/img/23978.jpg" alt="JS Badge" />
+        </div>
+        <div class="memoryCard" data-vehicles="php">
+          <img class="front-face" src="./src/img/orange-road-roller-vector-19619248.jpg" alt="React" />
+          <img class="back-face" src="./src/img/23978.jpg" alt="JS Badge" />
+        </div>
+       
+      </section>
+      <div class="controller">
+        <button class="button">Start</button>
+        <div class="timer">00:00</div>
+        <div class="score">Score:</div>
+      </div>
+
+
+      <div id="popup1" class="overlay">
+        <div class="popup">
+            <h2>Congratulations 🎉</h2>
+            <a class="close" href=# >×</a>
+            <div class="content-1">
+                Congratulations you're a winner 🎉🎉
+            </div>
+            <div class="content-2">
+                <p>You made <span id=finalMove> </span> moves </p>
+                <p>in <span id=totalTime> </span> </p>
+                <p>Rating:  <span id=starRating></span></p>
+            </div>
+            <button id="play-again"onclick="playAgain()">
+                Play again 😄</a>
+            </button>
+        </div>
+    </div>
+    
+      <script src="/src/index.js"></script>
+   
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
